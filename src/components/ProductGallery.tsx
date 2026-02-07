@@ -20,11 +20,11 @@ const ProductGallery = () => {
   return (
     <div className="flex flex-col gap-4">
       {/* Main Image */}
-      <div className="relative aspect-square overflow-hidden rounded-lg bg-secondary">
+      <div className="relative aspect-square overflow-hidden rounded-lg bg-secondary flex items-center justify-center">
         <img
           src={productImages[selectedIndex]}
           alt="Vedsutra Detox Foot Patch"
-          className="w-full h-full object-cover"
+          className="w-full h-full object-contain"
         />
         <button
           onClick={goToPrev}
@@ -55,7 +55,7 @@ const ProductGallery = () => {
             <img
               src={img}
               alt={`Vedsutra Foot Patch view ${index + 1}`}
-              className="w-full h-full object-cover rounded-md"
+              className="w-full h-full object-contain rounded-md bg-secondary"
             />
           </button>
         ))}

@@ -1,8 +1,8 @@
 export const productImages = [
   "/images/t1.jpeg",
   "/images/t2.jpeg",
-  "/images/t3.jpeg",
-  "/images/t4.jpeg",
+  "/images/t6.jpeg",
+  "/images/t7.jpeg",
   "/images/t5.jpeg",
 ];
 
@@ -21,7 +21,7 @@ export type SizeOption = {
 };
 
 export const sizeOptions: SizeOption[] = [
-  { label: "1 Pack (10 Patches)", price: 1199, originalPrice: 2499 },
+  { label: "1 Pack (30 Patches)", price: 1199, originalPrice: 2499 },
 ];
 
 export const reviews = [
@@ -83,7 +83,7 @@ export const productDescription = {
   features: [
     "Advanced Detoxification: Powerful natural ingredients work overnight to draw out toxins, heavy metals, and impurities from your body through the soles of your feet.",
     "Weight Loss Support: Helps boost metabolism and supports your fat loss journey naturally without harsh chemicals or side effects.",
-    "Premium Quality: Each pack contains 10 individually sealed, medical-grade adhesive patches for maximum effectiveness and hygiene.",
+    "Premium Quality: Each pack contains 30 individually sealed, medical-grade adhesive patches for maximum effectiveness and hygiene.",
     "Natural Ayurvedic Formula: Crafted with time-tested ingredients including Ginger, Salt, Bamboo Vinegar, Tourmaline, and Chitosan.",
     "Better Sleep: Many users report improved sleep quality and wake up feeling more refreshed and energized.",
     "Easy to Use: Simply apply before bed, sleep comfortably, and remove in the morning. No mess, no hassle.",

@@ -10,7 +10,7 @@ const ProductInfo = () => {
 
   const handleBuyNow = () => {
     const orderDetails = {
-      product: "Vedsutra Detox Foot Patch - 10 Patches",
+      product: "Vedsutra Detox Foot Patch - 30 Patches",
       size: selectedSize.label,
       quantity,
       price: selectedSize.price * quantity,
@@ -41,7 +41,7 @@ const ProductInfo = () => {
         Detox Foot Patch - Natural Fat Loss & Body Detoxification
       </h1>
       <p className="text-base text-muted-foreground mt-2">
-        10 Premium Patches | Transform Your Health Overnight
+        30 Premium Patches | Transform Your Health Overnight
       </p>
 
       {/* Price */}
@@ -69,7 +69,19 @@ const ProductInfo = () => {
           ))}
         </div>
         <span className="text-sm font-medium">4.8</span>
-        <span className="text-sm text-muted-foreground">127 reviews</span>
+        <a
+          href="#reviews"
+          onClick={(e) => {
+            e.preventDefault();
+            const element = document.getElementById("reviews");
+            if (element) {
+              element.scrollIntoView({ behavior: "smooth" });
+            }
+          }}
+          className="text-sm text-primary hover:underline font-medium cursor-pointer transition-colors"
+        >
+          127 reviews
+        </a>
       </div>
 
       {/* Package Info */}
@@ -78,7 +90,7 @@ const ProductInfo = () => {
           Package: <span className="font-normal">{selectedSize.label}</span>
         </p>
         <div className="bg-secondary/50 rounded-lg p-3 text-sm text-muted-foreground">
-          <p>✓ 10 Premium Detox Foot Patches</p>
+          <p>✓ 30 Premium Detox Foot Patches</p>
           <p>✓ Easy-to-follow instructions</p>
           <p>✓ 100% Natural Ingredients</p>
         </div>
@@ -86,9 +98,9 @@ const ProductInfo = () => {
 
       {/* Stock */}
       <div className="flex items-center gap-2">
-        <span className="w-2.5 h-2.5 rounded-full bg-success inline-block" />
-        <span className="text-sm stock-badge font-medium">
-          In stock, ready to ship
+        <span className="w-2.5 h-2.5 rounded-full bg-orange-500 inline-block animate-pulse" />
+        <span className="text-sm font-medium text-orange-600">
+          ⚠️ Only 2 last pieces are left!
         </span>
       </div>
 
