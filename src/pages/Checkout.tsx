@@ -28,7 +28,6 @@ const Checkout = () => {
   const [order, setOrder] = useState<OrderDetails | null>(null);
   const [paymentMode, setPaymentMode] = useState<"online" | "cod">("cod");
   
-  // Force COD mode (online payment disabled)
   useEffect(() => {
     if (paymentMode === "online") {
       setPaymentMode("cod");
